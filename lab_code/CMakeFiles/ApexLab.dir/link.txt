@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/ApexLab.dir/testbench.cpp.o CMakeFiles/ApexLab.dir/apex_code.cpp.o  -o ApexLab 
