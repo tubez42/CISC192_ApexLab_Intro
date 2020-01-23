@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/runner/CISC192Unit1ApexLab/lab_code/apex_code.cpp
+iostream
+-
+apex_code.h
+/home/runner/CISC192Unit1ApexLab/lab_code/apex_code.h
+
+/home/runner/CISC192Unit1ApexLab/lab_code/apex_code.h
+
+/home/runner/CISC192Unit1ApexLab/lab_code/testbench.cpp
+apex_code.h
+/home/runner/CISC192Unit1ApexLab/lab_code/apex_code.h
+
