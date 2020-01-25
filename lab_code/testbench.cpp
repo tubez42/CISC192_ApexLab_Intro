@@ -2,8 +2,8 @@
 // Don't modify code in this file, with the exception
 // of adding test cases.
 //
-#include <cassert>
 #include <iostream>
+#include <fstream>
 #include "apex_code.h"
 
 using namespace std;
@@ -22,7 +22,7 @@ void test(TEST_FUNC_PTR, const string& input, const string& expected)
     else
     {
         cout << "With input \"" << input << "\" expected output \"" << expected
-            << "\", received \"" << out_stream.str() << "\"" << endl;
+             << "\", received \"" << out_stream.str() << "\"" << endl;
     }
 }
 
@@ -32,15 +32,18 @@ int main()
     // modify input with the first string, and the expected output
     // in the second string.
 
-    // Testing minutes to 12 hour time
-    test(minutes_to_12hour_time, "60", "1:0 !");
-    test(minutes_to_12hour_time, "121", "2:1 !");
-    test(minutes_to_12hour_time, "785", "1:5 !");
-
-    // Testing hours minutes seconds to 12 hour time
-    test(numbers_to_12hour_time, "0 0 0", "0:0.0 !");
-    test(numbers_to_12hour_time, "60.5 60 60", "1:31.0 !");
-    test(numbers_to_12hour_time, "1 121 12", "3:1.12 !");
+    test(middle_word_check, "apple", "apple comes before middle");
+    test(middle_word_check, "Middle", "Middle comes before middle");
+    test(middle_word_check, "tree", "tree comes after middle");
+    test(middle_word_check, "1tree", "1tree comes before middle");
+    test(animal_abcs, "a", "anteater");
+    test(animal_abcs, "B", "bat");
+    test(animal_abcs, "1", "1 is not supported");
+    test(delivery_range_check, "gas 100 30 30 30 30", "Not going to happen.");
+    test(delivery_range_check, "gas 10 5 5 5 5", "Not going to happen.");
+    test(delivery_range_check, "electric 85 3.4 10 5 5", "You can make it in your electric car!");
+    test(delivery_range_check, "gas 85 3 3 3 3", "You can make it on an electric scooter!");
+    test(delivery_range_check, "gas 200 2.57 6.7 40 3", "You can make it in your gas car!");
 
     return 0;
 }
