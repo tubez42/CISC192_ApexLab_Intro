@@ -32,18 +32,8 @@ int main()
     // modify input with the first string, and the expected output
     // in the second string.
 
-    test(middle_word_check, "apple", "apple comes before middle");
-    test(middle_word_check, "Middle", "Middle comes before middle");
-    test(middle_word_check, "tree", "tree comes after middle");
-    test(middle_word_check, "1tree", "1tree comes before middle");
-    test(animal_abcs, "a", "anteater");
-    test(animal_abcs, "B", "bat");
-    test(animal_abcs, "1", "1 is not supported");
-    test(delivery_range_check, "gas 100 30 30 30 30", "Not going to happen.");
-    test(delivery_range_check, "gas 10 5 5 5 5", "Not going to happen.");
-    test(delivery_range_check, "electric 85 3.4 10 5 5", "You can make it in your electric car!");
-    test(delivery_range_check, "gas 85 3 3 3 3", "You can make it on an electric scooter!");
-    test(delivery_range_check, "gas 200 2.57 6.7 40 3", "You can make it in your gas car!");
+    test(quiz, "C++ is the language for beginner", "Is the language for beginner c++?");
+    test(quiz, "My name is Yoda", "Name is Yoda my?");
 
     return 0;
 }

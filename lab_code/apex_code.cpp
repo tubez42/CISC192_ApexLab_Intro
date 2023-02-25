@@ -5,31 +5,22 @@
 
 using namespace std;
 
-void middle_word_check(stringstream& cin, stringstream& cout)
+void quiz(stringstream& cin, stringstream& cout)
 {
-    // Place code for getting the street address
-    // Pretend this is your main function and you can use cin/cout
-    // as you would in main.
+    // Prompt user to enter a line (no punctuation)
+    // Output the line but with the first word moved to the end of the line with adjusting the capitalization and
+    // additional mark.
 
-    // If you want to print to the console for debugging use std::cout.
-    // Use cout for your final solution.
+    // Hint: Deal with the capitalization the very last!
+    // Hint: You might need to use the following methods:
+    //   - string::find()
+    //   - string::at()
+    //   - string::append()
+    //   - string::insert()
+    //   - string::length()
+    //   - string::substr()
+    //   - tolower()
+    //   - toupper()
+    
 }
 
-void animal_abcs(stringstream &cin, stringstream &cout) {
-    // Place code for outputting the total sales of a coffee item
-    // Pretend this is your main function and you can use cin/cout
-    // as you would in main.
-
-    // If you want to print to the console for debugging use std::cout.
-    // Use cout for your final solution.
-}
-
-void delivery_range_check(std::stringstream &cin, std::stringstream &cout)
-{
-    // Place code for reading the first name and country here
-    // Pretend this is your main function and you can use cin/cout
-    // as you would in main.
-
-    // If you want to print to the console for debugging use std::cout.
-    // Use cout for your final solution.
-}
