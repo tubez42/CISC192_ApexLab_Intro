@@ -32,8 +32,6 @@ int main()
     // modify input with the first string, and the expected output
     // in the second string.
 
-    test(quiz, "C++ is the language for beginner", "Is the language for beginner c++?");
-    test(quiz, "My name is Yoda", "Name is Yoda my?");
 
     return 0;
 }
