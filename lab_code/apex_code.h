@@ -1,11 +1,10 @@
 //
-// Don't modify code in this file.
+// Created by amilner001 on 8/3/2019.
 //
-#include <sstream>
 
 #ifndef APEXLAB_APEX_CODE_H
 #define APEXLAB_APEX_CODE_H
 
-void quiz(std::stringstream& cin, std::stringstream& cout);
+void print_my_name();
 
 #endif //APEXLAB_APEX_CODE_H
