@@ -8,5 +8,5 @@ using namespace std;
 
 void print_my_name()
 {   
-    cout << "Hello C++! I'm <put_name_here" << endl;
+    cout << "Hello C++! I'm <put_name_here>" << endl;
 }
