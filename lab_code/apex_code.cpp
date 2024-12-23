@@ -1,12 +1,12 @@
 //
+// Created by amilner001 on 8/3/2019.
 //
 #include <iostream>
 #include "apex_code.h"
 
 using namespace std;
 
-void quiz(stringstream& cin, stringstream& cout)
-{
-    
+void print_my_name()
+{   
+    cout << "Hello C++! I'm <put_name_here" << endl;
 }
-
